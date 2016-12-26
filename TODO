@@ -1,0 +1,5 @@
+- Daemonize the script instead of manual run
+- Logging cpu state changes
+- Detect core loading increasing in lower than 60.0 range and enable core to prevent loading starvation
+- Switch the cores to the next cores in the list after few hours instead of always using first N cores,
+    e.g. +0h - 0:1, +1h - 1:2, +2 - 2:3, etc.
